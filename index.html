@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Cálculo do IMC</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="text-center">
+      <h4 class="m-3 text-uppercase text-dark font-weight-bold">
+        calcule seu índice de massa corporal
+      </h4>
+      <div class="text-white font-weight-bold text-primary p-4">
+        <span>Cálculo válido apenas para pessoas adultas.</span>
+      </div>
+    </header>
+    <div class="container rounded text-center">
+      <form class="form-imc">
+        <span class="text-uppercase font-weight-bold">altura</span>
+        <input class="border border-light font-weight-bold" type="number" step=".01" id="height" name="height"
+          placeholder="Ex: 1,70" autofocus>
+
+        <span class="text-uppercase font-weight-bold">peso</span>
+        <input class="mt-1 border border-light font-weight-bold" type="number" step=".01" id="weight" name="weight"
+          placeholder="Ex: 70,5">
+
+        <button class="calc-button btn btn-outline-light font-weight-bold m-2 text-primary text-uppercase">
+          calcular
+        </button>
+
+        <button class="clear-button btn btn-outline-light font-weight-bold m-2 text-primary text-uppercase"
+          type="reset">
+          limpar
+        </button>
+      </form>
+      <div class="container-info container rounded m-1" role="info">
+        <h6 class="feedback font-weight-bold"></h6>
+      </div>
+      <img
+        src="https://img.freepik.com/vetores-gratis/controle-do-indice-de-massa-corporal-bela-jovem-em-dieta-tentando-controlar-o-peso-corporal-com-o-imc-garota-esta-em-escala-metodo-de-medicao-de-gordura-saudavel-escalas-de-grafico-de-obesidade-baixo-peso-e-obesidade-extrema_458444-1022.jpg?w=2000"
+        class="img-fluid" alt="Imagem responsiva">
+    </div>
+
+    <script src="./app.js"></script>
+  </div>
+
+</body>
+
+</html>
